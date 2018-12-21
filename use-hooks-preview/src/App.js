@@ -4,7 +4,13 @@ import Counter from './Counter';
 import DocumentTitle from './DocumentTitle';
 import KeyPress from './KeyPress';
 
+import useKeyPress from './hooks/useKeyPress';
+
 function App() {
+  const aKey = useKeyPress('a');
+
+  console.log(aKey);
+
   return (
     <div className="App">
       <header className="App-header">
